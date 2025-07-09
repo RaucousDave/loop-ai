@@ -2,7 +2,6 @@ import Hero from "./sections/Hero";
 import Navbar from "./Navbar";
 import Benefits from "./sections/Benefits";
 import Footer from "./sections/Footer";
-import WhyLoopAI from "./sections/WhyLoopAI";
 export default function Wrapper() {
   return (
     <div>
@@ -12,7 +11,6 @@ export default function Wrapper() {
           <Hero />
         </div>
         <Benefits />
-        <WhyLoopAI />
         <Footer />
       </div>
     </div>
