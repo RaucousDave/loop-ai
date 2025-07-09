@@ -57,7 +57,7 @@ export default function Benefits() {
         <div className="text-center mt-16">
           <a
             href="#cta"
-            className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-xl transition"
+            className="inline-block bg-white  text-black font-semibold py-3 px-6 rounded-xl transition"
           >
             Join the Waitlist
           </a>

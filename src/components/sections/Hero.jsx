@@ -1,8 +1,9 @@
 import AnimatedBlob from "../AnimatedBlob";
+import FadeInOnScroll from "../FadeIn";
 
 export default function HeroSection() {
   return (
-    <div className="relative overflow-hidden min-h-screen bg-accent-dark text-white">
+    <div className="relative overflow-hidden min-h-screen  text-black">
       {/* Blobs */}
       <AnimatedBlob top="10%" left="5%" color="rgba(99,102,241,0.2)" />
       <AnimatedBlob
@@ -19,18 +20,20 @@ export default function HeroSection() {
       />
 
       {/* Actual Hero Content */}
-      <div className="relative h-screen flex flex-col items-center justify-center h-full text-center px-4">
-        <h1 className="text-4xl md:text-6xl text-primary font-bold">
-          Loop.AI — Smarter Tools for African Creators
-        </h1>
-        <p className="mt-4 max-w-xl text-secondary text-lg text-gray-300">
-          Create faster, caption better, and stay ahead of trends. Your
-          intelligent creative partner.
-        </p>
-        <button className="mt-6 px-6 py-3 bg-purple-600 hover:bg-purple-700 transition rounded-xl text-white font-semibold">
-          Join the Waitlist
-        </button>
-      </div>
+      <FadeInOnScroll>
+        <div className="relative h-screen flex flex-col items-center justify-center  text-center px-4">
+          <h1 className="text-4xl md:text-6xl text-black font-bold">
+            Loop.AI — Smarter Tools for African Creators
+          </h1>
+          <p className="mt-4 max-w-xl text-black text-lg">
+            Create faster, caption better, and stay ahead of trends. Your
+            intelligent creative partner.
+          </p>
+          <button className="mt-6 px-6 py-3 bg-black hover:bg-accent-dark transition rounded-xl text-white font-semibold">
+            Join the Waitlist
+          </button>
+        </div>
+      </FadeInOnScroll>
     </div>
   );
 }
